@@ -1,0 +1,263 @@
+
+*** Running vivado
+    with args -log KRIA_IDDRE.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source KRIA_IDDRE.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source KRIA_IDDRE.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:23 . Memory (MB): peak = 1002.797 ; gain = 118.148
+Command: read_checkpoint -auto_incremental -incremental D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/utils_1/imports/synth_1/KRIA_IDDRE.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/utils_1/imports/synth_1/KRIA_IDDRE.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top KRIA_IDDRE -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5944
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1445.203 ; gain = 409.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'KRIA_IDDRE' [D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/sources_1/new/KRIA_IDDRE.vhd:49]
+INFO: [Synth 8-113] binding component instance 'IBUFDS_inst_data' to cell 'IBUFDS' [D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/sources_1/new/KRIA_IDDRE.vhd:79]
+INFO: [Synth 8-113] binding component instance 'IBUFDS_inst_FCLK' to cell 'IBUFDS' [D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/sources_1/new/KRIA_IDDRE.vhd:86]
+INFO: [Synth 8-113] binding component instance 'IBUFDS_inst_DCLK' to cell 'IBUFDS' [D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/sources_1/new/KRIA_IDDRE.vhd:93]
+INFO: [Synth 8-113] binding component instance 'BUFG_inst_BCLK' to cell 'BUFG' [D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/sources_1/new/KRIA_IDDRE.vhd:101]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 2.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 150.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 2.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 2.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKFBIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLKIN1_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'MMCME3_BASE_inst' to cell 'MMCME3_BASE' [D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/sources_1/new/KRIA_IDDRE.vhd:108]
+INFO: [Synth 8-113] binding component instance 'BUFG_inst_DCLKInt' to cell 'BUFG' [D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/sources_1/new/KRIA_IDDRE.vhd:175]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter IS_CB_INVERTED bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IDDRE1_inst_DATA' to cell 'IDDRE1' [D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/sources_1/new/KRIA_IDDRE.vhd:182]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter IS_CB_INVERTED bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IDDRE1_inst_FCLK' to cell 'IDDRE1' [D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/sources_1/new/KRIA_IDDRE.vhd:197]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst_DATAQ1' to cell 'FDRE' [D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/sources_1/new/KRIA_IDDRE.vhd:213]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b1 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst_DATAQ2' to cell 'FDRE' [D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/sources_1/new/KRIA_IDDRE.vhd:229]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst_FCLKQ1' to cell 'FDRE' [D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/sources_1/new/KRIA_IDDRE.vhd:247]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b1 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst_FCLKQ2' to cell 'FDRE' [D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/sources_1/new/KRIA_IDDRE.vhd:263]
+INFO: [Synth 8-256] done synthesizing module 'KRIA_IDDRE' (0#1) [D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.srcs/sources_1/new/KRIA_IDDRE.vhd:49]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1534.074 ; gain = 498.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1534.074 ; gain = 498.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1534.074 ; gain = 498.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1534.074 ; gain = 498.695
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (FDRE_inst_FCLKQ2) is unused and will be removed from module KRIA_IDDRE.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:46 . Memory (MB): peak = 2332.641 ; gain = 1297.262
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:46 . Memory (MB): peak = 2332.641 ; gain = 1297.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:46 . Memory (MB): peak = 2332.641 ; gain = 1297.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2332.641 ; gain = 1297.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2332.641 ; gain = 1297.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2332.641 ; gain = 1297.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2332.641 ; gain = 1297.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2332.641 ; gain = 1297.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2332.641 ; gain = 1297.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     2|
+|2     |IDDRE1      |     2|
+|3     |MMCME3_BASE |     1|
+|4     |FDCE        |    14|
+|5     |FDRE        |    17|
+|6     |IBUF        |     1|
+|7     |IBUFDS      |     3|
+|8     |OBUF        |    14|
++------+------------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    54|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2332.641 ; gain = 1297.262
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2332.641 ; gain = 1297.262
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2332.641 ; gain = 1297.262
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2332.641 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2372.023 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  BUFG => BUFGCE: 2 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 3 instances
+  MMCME3_BASE => MMCME4_ADV: 1 instance 
+
+Synth Design complete, checksum: 9bdf11c3
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:01:02 . Memory (MB): peak = 2372.023 ; gain = 1344.395
+INFO: [Common 17-1381] The checkpoint 'D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.runs/synth_1/KRIA_IDDRE.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file KRIA_IDDRE_utilization_synth.rpt -pb KRIA_IDDRE_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  4 19:19:43 2024...

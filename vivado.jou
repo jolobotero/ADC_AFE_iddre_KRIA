@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Jan 19 13:38:13 2024
+# Process ID: 15796
+# Current directory: D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16728 D:\P_vhdl_Vi\ADC_AFE_iddre_KRIA\ADC_AFE_iddre_KRIA.xpr
+# Log file: D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/vivado.log
+# Journal file: D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA\vivado.jou
+# Running On: JORGECASA, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 4, Host memory: 8481 MB
+#-----------------------------------------------------------
+start_guiopen_project D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.xpr
+uupdate_compile_order -fileset sources_1

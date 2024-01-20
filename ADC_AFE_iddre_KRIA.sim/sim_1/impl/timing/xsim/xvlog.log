@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/P_vhdl_Vi/ADC_AFE_iddre_KRIA/ADC_AFE_iddre_KRIA.sim/sim_1/impl/timing/xsim/kriaSimulation_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IBUF_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module IBUFDS_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module IBUFDS_HD33
+INFO: [VRFC 10-311] analyzing module IBUFDS_HD34
+INFO: [VRFC 10-311] analyzing module KRIA_IDDRE
+INFO: [VRFC 10-311] analyzing module glbl

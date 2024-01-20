@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../ADC_AFE_iddre_KRIA.srcs/sim_1/new/kriaSimulation.vhd" \
+
+# Do not sort compile order
+nosort
